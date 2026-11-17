@@ -13,5 +13,18 @@
   "devDependencies": {
     "@types/node": "^24.0.0",
     "typescript": "^5.0.0"
-  }
+  },
+  "description": "Requires Node.js 20 or later.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nageshgorana/javascript-dsaquestions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nageshgorana/javascript-dsaquestions/issues"
+  },
+  "homepage": "https://github.com/Nageshgorana/javascript-dsaquestions#readme"
 }
