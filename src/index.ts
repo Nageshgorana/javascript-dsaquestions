@@ -25,7 +25,6 @@ const students = [
 
 
 
-
 // Q12. Find the Lowest Scorer
 
 // * Find the student who has the lowest marks.
