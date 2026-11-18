@@ -363,20 +363,80 @@ let products = [
 // ### 1. forEach()
 // Print the title and price of every product.
 
+// products.forEach((student ) =>{
+
+//     console.log(student.title ,student.price)
+
+// })
+
+
+
 // ### 2. forEach()
 // Print the title and category of every product.
+
+// products.forEach((student ) =>{
+
+//     console.log(student.title ,student.category)
+
+// })
+
+
 
 // ### 3. map()
 // Create a new array containing only the titles of all products.
 
+// let titles = products.map((product ) =>{
+//     return product.title 
+// })
+//  console.log(titles)
+
+
+
 // ### 4. map()
 // Create a new array containing product titles and their prices after applying a 10% discount.
+
+// let discountedproducts = products.map((product) =>{
+//     let discountedprice = product.price - (product.price*0.1)
+//     return{
+//         title: product.title,
+//         discountedprice: discountedprice
+//     }
+
+
+// })
+// console.log(discountedproducts)
 
 // ### 5. filter()
 // Find all products whose price is greater than $100.
 
+// let Expnsive = products.filter((product) => {
+//     if (product.price > 100){
+//         console.log(product.title, product.price)
+//     }
+// })
+
+
+
+
 // ### 6. filter()
 // Find all products whose rating is greater than or equal to 4.5.
 
+
+
+// let bestproducts = products.filter((product) => {
+//     if (product.rating.rate >= 4.5){
+//         console.log(product.title)
+//     }
+// })
+
+
 // ### Bonus Challenge
 // Use filter() and map() together to find all products belonging to the `electronics` category and return only their titles.
+
+let electronicproducts = products.filter((product) =>{
+    if (product.category === "electronics"){
+        return true}
+}).map( product =>{
+    return product.title
+})
+console.log(electronicproducts)
