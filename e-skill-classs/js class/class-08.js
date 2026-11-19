@@ -496,8 +496,8 @@ let products = [
 // ### 5. filter()
 // Find all products whose rating count is greater than 200.
 
-let stock = products.filter((product) => product.rating.count > 200)
-console.log(stock);
+// let stock = products.filter((product) => 20 < product.rating.count > 200)
+// console.log(stock);
 
 
 
@@ -506,17 +506,67 @@ console.log(stock);
 // ### 6. filter()
 // Find all products whose price is between $20 and $100.
 
+// let midium_price = products.filter((product) =>20 < product.price > 100)
+// console.log(midium_price);
+
+
+
+
 // ### 7. reduce()
 // Calculate the total price of all products.
+
+// let total = products.reduce((acc ,product) => {
+//     return acc + product.price
+// },0)
+// console.log(total);
+
+
+
+
 
 // ### 8. reduce()
 // Count how many products belong to each category.
 
+
+
+// let total_category = products.reduce((acc ,product) => {
+//     return acc = product.category.length
+// },0)
+// console.log(total_category);
+
+
+
+
 // ### 9. sort()
 // Sort all products by price in ascending order (lowest to highest).
 
+
+// let assending = products.sort((a,b ) => {
+//     if(a.price>b.price){
+//         return 1
+//     }else{
+//         return -1
+//     }
+// })
+// console.log(assending);
+
+
+
 // ### 10. sort()
 // Sort all products by rating in descending order (highest to lowest).
+
+
+// const desending = products.sort((product1 , product2 ) => {
+//     if(product1.rating.rate < product2.rating.rate){
+//         return 1
+//     }else{
+//         return -1
+//     }
+// })
+// console.log(desending);
+
+
+
 
 // ---
 
@@ -524,3 +574,16 @@ console.log(stock);
 // Use `filter()`, `sort()`, and `map()` together to:
 
 // Find all electronics products, sort them by price from highest to lowest, and return only their titles.
+
+// let electronic = products
+// .filter((product) => product.category === "electronics")
+// .sort((product1 , product2 )=> {
+//     if (product1.price > product2) {
+//         return 1
+    
+// } else {
+//     return -1
+// }
+// })
+// .map((product) => product.title)
+// console.log(electronic);
