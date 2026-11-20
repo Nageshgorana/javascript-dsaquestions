@@ -460,7 +460,7 @@ let products = [
 
 // let ids = products.map((product) => {
 //    console.log(product.id,product.title);
-   
+
 // })
 
 // console.log(ids);
@@ -475,11 +475,11 @@ let products = [
 //   return { 
 //    "title" : product.title,
 //    "price" : product.price*85,
-   
+
 // } })
 // console.log(indianprice);
 
-    
+
 
 
 
@@ -529,10 +529,11 @@ let products = [
 
 
 
-// let total_category = products.reduce((acc ,product) => {
-//     return acc = product.category.length
-// },0)
-// console.log(total_category);
+let total_category = products.reduce((acc, product) => {
+    acc[product.category] = (acc[product.category] || 0) + 1
+    return acc
+}, {})
+console.log(total_category);
 
 
 
@@ -580,10 +581,23 @@ let products = [
 // .sort((product1 , product2 )=> {
 //     if (product1.price > product2) {
 //         return 1
-    
+
 // } else {
 //     return -1
 // }
 // })
 // .map((product) => product.title)
 // console.log(electronic);
+
+
+
+// let nums = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
+// let new_array = [];
+// for (let i = 0; i < nums.length; i++) {
+//     for (let j = 0; j < nums[i].length; j++) {
+//         new_array.push(nums[i][j]);
+
+//     }
+
+// }
+// console.log(new_array);
